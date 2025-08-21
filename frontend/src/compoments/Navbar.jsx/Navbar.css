@@ -1,0 +1,135 @@
+﻿/* تنسيقات شريط التنقل الرئيسي */
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar {
+    display: flex;
+    align-items: center;
+    max-height: 100px;
+    padding: 15px 5%;
+    background-color: #2e6f5e;
+  }
+  
+  /* تنسيقات قائمة الروابط */
+  .navbarmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto; /* هذا ما يدفعها إلى اليسار */
+  }
+  
+  /* تنسيق الشعار في المنتصف */
+  .lgo {
+    width: auto;
+    max-height: 100px;
+    margin-right: 300px;
+   
+    
+    /* لا حاجة لخصائص إضافية هنا، الهوامش التلقائية هي من تقوم بالعمل */
+  }
+  
+  /* تنسيقات زر "Réserver" */
+  .navbar-right {
+      margin-left: auto; /* هذا ما يدفعها إلى اليمين */
+  }
+  
+  .rserve {
+    border-radius: 50px;
+    background: #a7d8e4;
+    color: #1e1e1e;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .rserve:hover {
+    background-color: #b85c38;
+    color: #f7f4ef;
+  }
+  
+  /* باقي أكواد CSS كما هي */
+  .navbarmenu li {
+      position: relative;
+      color: #e5d3b3;
+      font-family: Raleway, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      cursor: pointer;
+      padding: 5px 0;
+  }
+  
+  .navbarmenu li::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #e5d3b3;
+      transition: width 0.3s ease-in-out;
+  }
+  
+  .navbarmenu li:hover::after {
+      width: 100%;
+  }
+  
+  .dropdown-icon {
+      width: 15px;
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  
+  .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #e5d3b3;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      min-width: 180px;
+  }
+  
+  .dropdown-menu li {
+      color: #2e6f5e;
+      font-family: Raleway, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 8px 12px;
+      white-space: nowrap;
+      transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu li:hover {
+      background-color: rgba(46, 111, 94, 0.1);
+  }
+  
+  /* تنسيقات زر "Réserver" */
+  .rserve {
+      border-radius: 50px;
+      background: #a7d8e4;
+      color: #1e1e1e;
+      font-family: Raleway, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* تنسيقات زر "Réserver" عند التحويم */
+  .rserve:hover {
+      background-color: #b85c38;
+      color: #f7f4ef;
+  }
