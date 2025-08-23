@@ -1,4 +1,4 @@
-﻿/* تنسيقات شريط التنقل الرئيسي */
+﻿
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar {
     display: flex;
@@ -8,7 +8,7 @@
     background-color: #2e6f5e;
   }
   
-  /* تنسيقات قائمة الروابط */
+
   .navbarmenu {
     display: flex;
     justify-content: center;
@@ -17,22 +17,22 @@
     gap: 30px;
     padding: 0;
     margin: 0;
-    margin-right: auto; /* هذا ما يدفعها إلى اليسار */
+    margin-right: auto; 
   }
   
   /* تنسيق الشعار في المنتصف */
   .lgo {
     width: auto;
     max-height: 100px;
-    margin-right: 300px;
+    margin-right: 320px;
    
     
-    /* لا حاجة لخصائص إضافية هنا، الهوامش التلقائية هي من تقوم بالعمل */
+    
   }
   
-  /* تنسيقات زر "Réserver" */
+  
   .navbar-right {
-      margin-left: auto; /* هذا ما يدفعها إلى اليمين */
+      margin-left: auto; 
   }
   
   .rserve {
@@ -54,7 +54,7 @@
     color: #f7f4ef;
   }
   
-  /* باقي أكواد CSS كما هي */
+ 
   .navbarmenu li {
       position: relative;
       color: #e5d3b3;
@@ -128,7 +128,7 @@
       transition: background-color 0.3s, color 0.3s;
   }
   
-  /* تنسيقات زر "Réserver" عند التحويم */
+  
   .rserve:hover {
       background-color: #b85c38;
       color: #f7f4ef;

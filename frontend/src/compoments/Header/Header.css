@@ -1,0 +1,156 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; 
+}
+
+
+.hero-text {
+    margin-top: 50px; 
+  width: 767px;
+  text-align: center;
+}
+
+.hero-text h2 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.bg {
+  position: relative;
+  width: 100vw; 
+  max-width: 100%;
+  height: 500px;
+  border-radius: 80px;
+  overflow: hidden; 
+}
+
+
+.animation-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  animation: scroll-left 10s linear infinite; 
+}
+
+.animation-bg img {
+  width: 50%; 
+  height: 100%;
+  float: right; 
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+
+.hero-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 1000px;
+  border-radius: 40px;
+  overflow: hidden; 
+  z-index: 10; 
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 40px;
+}
+
+
+.hero-bg:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+.hero-desc {
+  width: 1000px;
+  height: 72px;
+  text-align: center;
+}
+
+.hero-desc p {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+
+.action-button {
+  display: flex;
+  gap: 20px; 
+}
+
+
+.command {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: #2e6f5e;
+  border: none;
+  color: #e5d3b3;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.command:hover {
+  background: #b85c38;
+  color: #f7f4ef;
+}
+
+
+.reserve {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background: #a7d8e4;
+  border: none;
+  color: #1e1e1e;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reserve:hover {
+  background: #1e4d6b;
+  color: #f7f4ef;
+}
