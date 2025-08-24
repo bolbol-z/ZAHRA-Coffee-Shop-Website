@@ -1,0 +1,149 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.services {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background: url('/New Project-5.png') no-repeat center center/cover;
+    opacity: 0.9;
+    filter: blur(4px);
+    z-index: -1; 
+    flex-shrink: 0;
+    aspect-ratio: 3/2;
+    margin-top: 150px;
+}
+
+
+.titel {
+    width: 767px;
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* تنسيقات الوصف */
+.desc {
+    width: 1000px;
+    height: 72px;
+    flex-shrink: 0;
+}
+
+.desc p {
+    color: #000;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* تنسيقات حاوية البطاقات (المجموعة التي تحتوي على conatainer_1 و 2 و 3) */
+.services-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* المسافة بين البطاقات */
+    margin-top: 50px;
+}
+
+/* تنسيقات البطاقات الثلاث */
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 100px;
+    background: #2e6f5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* تنسيقات الصور داخل البطاقات */
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+/* تنسيقات قسم النصوص داخل البطاقات */
+.text {
+    width: 340px;
+    height: 140px;
+    color: #e5d3b3;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* تنسيقات الأزرار بشكل عام */
+.button button {
+    width: 151px;
+    height: 54px;
+    border-radius: 50px;
+    border: none;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* تنسيقات زر Goûter */
+.Gouter {
+    background: #a7d8e4;
+    color: #1e1e1e;
+}
+
+/* تنسيقات زر Réserver و En savoir plus */
+.Reserver {
+    background: #a7d8e4;
+    color: #1e1e1e;
+}
+
+/* تأثيرات التحويم (Hover) على الأزرار */
+.Gouter:hover,
+.Reserver:hover {
+    background-color: #1e4d6b; /* لون الخلفية عند التحويم */
+    color: #f7f4ef; /* لون النص عند التحويم */
+}
+
+/* تأثير التكبير (animation) على البطاقات عند التحويم */
+.card:hover {
+    transform: scale(1.05);
+}
+
