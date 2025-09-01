@@ -1,0 +1,95 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.footer {
+    width: 100vw;
+    height: 380px;
+    background: #2E6F5E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #E5D3B3;
+}
+
+
+.logo img {
+    width: 108px;
+    height: 108px;
+    aspect-ratio: 1 / 1;
+}
+
+.slogon {
+    width: 371px;
+    height: 36px;
+    margin-top: 15px;
+}
+.slogon p {
+    color: #E5D3B3;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.links {
+    margin-top: 20px;
+}
+.links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 280px;
+}
+.links li {
+    color: #E5D3B3;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.line {
+    width: 800px;
+    height: 0; 
+    border-bottom: 1px solid #E5D3B3; 
+    margin-top: 20px;
+}
+
+.remarque {
+    margin-top: 30px;
+}
+.remarque span {
+    color: #E5D3B3;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.watermark {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.watermark span {
+    color: #E5D3B3;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

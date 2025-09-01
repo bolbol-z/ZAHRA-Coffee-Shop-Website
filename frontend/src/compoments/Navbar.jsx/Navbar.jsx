@@ -1,6 +1,7 @@
 ﻿import React, { useState } from 'react';
 import './Navbar.css';
 import images from '../../assets/assets';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -11,9 +12,11 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      {/* 1. القائمة على اليسار */}
+     
       <ul className="navbarmenu">
-        <li>Menu Principal</li>
+      <Link to="/menu" className="nav-link">
+          <li>Menu Principal</li>
+        </Link>
         <li>Réserver Maintenant</li>
         <li className="dropdown-toggle">
           <span>À Propos</span>
@@ -33,10 +36,12 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* 2. الشعار في المنتصف */}
-      <img src={images.zahraLogo} alt="Logo" className="lgo" />
+    
+      <Link to="/">
+        <img src={images.zahraLogo} alt="Logo" className="lgo" />
+      </Link>
       
-      {/* 3. الزر على اليمين */}
+
       <div className="navbar-right">
         <button className="rserve">Réserver</button>
       </div>

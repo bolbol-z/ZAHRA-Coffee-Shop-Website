@@ -1,0 +1,209 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.contact {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+    margin-top: 350px;
+}
+
+
+.title {
+    width: 820px;
+    text-align: center;
+}
+.title h2 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.desc {
+    width: 1000px;
+    text-align: center;
+}
+.desc p {
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.contact-info {
+    width: 100%;
+    height: 525px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/bg.png') no-repeat center center/cover;
+    gap: 50px;
+    padding: 0 50px;
+}
+
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    flex: 1;
+}
+
+
+.mail h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+
+.mail-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.mail-input input, .mail-input textarea {
+    width: 518px;
+    border-radius: 30px;
+    background: #e5d3b3;
+    border: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+.mail-input input {
+    height: 57px;
+}
+.mail-input textarea {
+    height: 227px;
+    resize: none;
+}
+.mail-input input::placeholder, .mail-input textarea::placeholder {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+}
+
+
+.mail-input button {
+    width: 150px;
+    height: 53px;
+    border-radius: 50px;
+    background: #2e6f5e;
+    border: none;
+    color: #e5d3b3;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.mail-input button:hover {
+    background: #b85c38;
+    color: #f7f4ef;
+}
+
+
+.separator {
+    width: 2px;
+    height: 403.005px;
+    background: #000;
+}
+
+
+.info-and-follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    flex: 1;
+    height: 100%;
+    padding: 20px 0;
+}
+
+
+.info {
+    width: 100%;
+    text-align: center; 
+}
+.info h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center; 
+    margin-bottom: 100px;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left; 
+    gap: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+.contact-item span {
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.follws {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.follws h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}

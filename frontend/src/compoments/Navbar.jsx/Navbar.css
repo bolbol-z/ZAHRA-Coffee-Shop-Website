@@ -20,7 +20,7 @@
     margin-right: auto; 
   }
   
-  /* تنسيق الشعار في المنتصف */
+
   .lgo {
     width: auto;
     max-height: 100px;
@@ -113,7 +113,7 @@
       background-color: rgba(46, 111, 94, 0.1);
   }
   
-  /* تنسيقات زر "Réserver" */
+
   .rserve {
       border-radius: 50px;
       background: #a7d8e4;

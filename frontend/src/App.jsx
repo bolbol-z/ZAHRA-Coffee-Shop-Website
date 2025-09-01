@@ -2,13 +2,19 @@ import React from 'react'
 import Navbar from './compoments/Navbar.jsx/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
+import Menu from './pages/Menu/Menu'
 
 const App = () => {
   return (
     <div className='app'>
-      <Navbar/>
       <Routes>
-        <Route path ='/' element={<Home/>}/>
+        <Route path='/' element={
+          <>
+            <Navbar />
+            <Home />
+          </>
+        } />
+        <Route path='/menu' element={<Menu />} />
       </Routes>
     </div>
   )
