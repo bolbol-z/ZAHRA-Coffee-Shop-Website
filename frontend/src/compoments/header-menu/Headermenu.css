@@ -1,38 +1,38 @@
 ﻿.Headermenu {
     position: relative;
     width: 100%;
-    height: 800px; /* الارتفاع المطلوب */
+    height: 800px; 
     border-radius: 0 0 50px 50px;
-    overflow: hidden; /* لمنع المحتوى من الظهور خارج الحدود الدائرية */
+    overflow: hidden; 
 }
 
-/* خلفية الفيديو */
+
 .video-background {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* لقص الفيديو من المنتصف */
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* لجعل الفيديو في الخلفية */
+    z-index: 1; 
 }
 
-/* المحتوى الأمامي (النص والأزرار) */
+
 .content {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2; /* لجعل المحتوى فوق الفيديو */
+    z-index: 2; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px; /* مسافة داخلية */
+    padding: 20px 50px; 
 }
 
-/* الصف العلوي (الشعار والزر) */
+
 .header-top {
     width: 100%;
     display: flex;
@@ -40,27 +40,27 @@
     align-items: center;
 }
 
-/* الشعار */
+
 .logo {
     width: 108px;
     height: 108px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
-    transition: transform 0.3s ease-in-out; /* حركة تكبير وتصغير سلسة */
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* تأثير التكبير عند hover */
+
 .logo-link:hover .logo {
-    transform: scale(1.1); /* يكبر قليلا */
+    transform: scale(1.1); 
 }
 
-/* زر Réserver */
+
 .reserve-button {
     width: 150px;
     height: 50px;
     border-radius: 50px;
     border: 1px solid #F7F4EF;
-    background-color: transparent; /* خلفية شفافة */
+    background-color: transparent;
     color: #F7F4EF;
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -69,13 +69,13 @@
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* تأثير hover على الزر */
+
 .reserve-button:hover {
     background-color: #F7F4EF;
-    color: #000; /* لون النص يتحول إلى أسود */
+    color: #000; 
 }
 
-/* النص "Offrez-vous..." */
+
 .header-text {
    
     text-align: center;

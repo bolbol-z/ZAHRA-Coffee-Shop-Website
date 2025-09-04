@@ -1,0 +1,27 @@
+﻿.circular-gallery {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    user-select: none; 
+  }
+  
+  .circular-gallery.grabbing {
+    cursor: grabbing; 
+  }
+  
+  .gallery-content {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap; 
+  }
+  
+  .gallery-item {
+    display: inline-block;
+    margin: 0 5px; /* تقليل المسافة بين العناصر */
+    transition: transform 0.1s linear; 
+  }

@@ -1,0 +1,79 @@
+﻿/* Container for the entire header */
+.rev-header {
+    width: 100%;
+    height: 500px;
+    overflow: hidden; 
+    position: relative;
+    border-radius: 0 0 50px 50px;
+  }
+  
+  /* Background image with border-radius */
+.header-background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/esra-afsar-Bt3Qv7TNeoA-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative; /* مهم لتموضع العناصر الداخلية بشكل مطلق */
+    display: flex;
+    justify-content: center; /* توسيط أفقي للمحتوى (النص) */
+    align-items: center;   /* توسيط عمودي للمحتوى (النص) */
+    border-radius: 0 0 50px 50px;
+  }
+  
+  /* Logo styling */
+  .header-logo {
+    width: 108px;
+    height: 108px;
+    position: absolute; /* تموضع مطلق بالنسبة لـ .header-background-image */
+    top: 30px; /* مسافة من الأعلى */
+    left: 30px; /* مسافة من اليسار */
+    cursor: pointer;
+    z-index: 10; /* للتأكد من ظهوره فوق الخلفية */
+  }
+  
+  /* Text container for centering */
+  .header-text-container {
+    max-width: 1150px; /* لتحديد عرض النص */
+    text-align: center;
+    z-index: 10;
+  }
+  
+  /* The animated text styling */
+  .rev-header-text {
+
+     display: block; 
+    color: #F7F4EF;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  /* 'Commander' button styling */
+  .commander-button {
+    color: #E5D3B3; /* تم تعديل اللون ليتوافق مع الصورة */
+    background-color: transparent;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #F7F4EF; 
+    cursor: pointer;
+    position: absolute; /* تموضع مطلق بالنسبة لـ .header-background-image */
+    top: 50px; /* مسافة من الأعلى */
+    right: 50px; /* مسافة من اليمين */
+    transition: all 0.3s ease-in-out;
+    z-index: 10; /* للتأكد من ظهوره فوق الخلفية */
+  }
+  
+  /* Hover effect for the 'Commander' button */
+  .commander-button:hover {
+    color: #000;
+    background-color: #F7F4EF;
+  }

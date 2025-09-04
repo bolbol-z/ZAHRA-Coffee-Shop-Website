@@ -1,0 +1,155 @@
+﻿/* Container for the whole page */
+body, html {
+    overflow-x: hidden; /* يمنع التمرير الأفقي على مستوى الصفحة بأكملها */
+  }
+.tab-container {
+    padding: 50px 0;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+  }
+  
+  /* Page Title */
+  .tab-title {
+    width: 600px;
+    margin: 0 auto;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  /* Horizontal line divider */
+  .tab-divider {
+    width: 1000px;
+    height: 3px;
+    background-color: #000;
+    margin: 20px auto 50px auto;
+  }
+  
+  /* Wrapper for the circular gallery to give it height */
+  .gallery-wrapper {
+    height: 600px; /* Adjust height as needed */
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  /* ========================================================= */
+  /* Table Item Styling */
+  /* The main card for each table */
+  .table-item {
+    width: 278px;
+    height: 387px;
+    border-radius: 30px;
+    border: 1px solid #2E6F5E;
+    box-shadow: 5px 6px 8px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* VIP table styling override */
+  .table-item.vip {
+    border: 1px solid #B85C38;
+  }
+  
+  /* Outdoor table styling override */
+  .table-item.outdoor {
+    border: 1px solid #A7D8E4;
+  }
+  
+  /* Header section with the table number */
+  .table-header {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    background: #2E6F5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* VIP header styling override */
+  .table-item.vip .table-header {
+    background: #B85C38;
+  }
+  
+  /* Outdoor header styling override */
+  .table-item.outdoor .table-header {
+    background: #A7D8E4;
+  }
+  
+  /* Table number text */
+  .table-number {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  /* Table details text */
+  .table-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .table-location,
+  .table-capacity-label {
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 5px 0;
+  }
+  
+  .table-capacity {
+    color: #000;
+    font-family: Raleway, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0;
+  }
+  
+  /* Reserve button */
+  .reserve-button {
+    width: 142px;
+    height: 51px;
+    border-radius: 50px;
+    border: 1px solid #2E6F5E;
+    background-color: transparent;
+    color: #2E6F5E;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: auto; /* Pushes the button to the bottom */
+  }
+  
+  /* Reserve button hover effect */
+  .reserve-button:hover {
+    background-color: #2E6F5E;
+    color: #000 !important; /* Force the color change */
+  }
+  
+  /* VIP Reserve button hover effect override */
+  .table-item.vip .reserve-button:hover {
+    background-color: #B85C38;
+    color: #000 !important; /* Force the color change */
+  }
+  
+  /* Outdoor Reserve button hover effect override */
+  .table-item.outdoor .reserve-button:hover {
+    background-color: #A7D8E4;
+    color: #000 !important; /* Force the color change */
+  }

@@ -14,10 +14,13 @@ const Navbar = () => {
     <div className='navbar'>
      
       <ul className="navbarmenu">
-      <Link to="/menu" className="nav-link">
+        <Link to="/menu" className="nav-link">
           <li>Menu Principal</li>
         </Link>
-        <li>Réserver Maintenant</li>
+        {/* إضافة Link للعنصر */}
+        <Link to="/reservation" className="nav-link">
+          <li>Réserver Maintenant</li>
+        </Link>
         <li className="dropdown-toggle">
           <span>À Propos</span>
           <img
