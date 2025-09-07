@@ -1,6 +1,6 @@
 ﻿/* Container for the whole page */
 body, html {
-    overflow-x: hidden; /* يمنع التمرير الأفقي على مستوى الصفحة بأكملها */
+    overflow-x: hidden; 
   }
 .tab-container {
     padding: 50px 0;

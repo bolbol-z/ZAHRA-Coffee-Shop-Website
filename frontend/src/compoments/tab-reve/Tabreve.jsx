@@ -3,7 +3,7 @@ import './Tabreve.css';
 import CircularGallery from '../../compoments/CircularGallery';
 
 const tables = [
-  // ... (نفس مصفوفة الطاولات)
+
   { type: 'standard', location: 'À l’intérieur', number: 1, capacity: 4, id: 'T01' },
   { type: 'standard', location: 'À l’intérieur', number: 2, capacity: 2, id: 'T02' },
   { type: 'standard', location: 'À l’intérieur', number: 3, capacity: 4, id: 'T03' },

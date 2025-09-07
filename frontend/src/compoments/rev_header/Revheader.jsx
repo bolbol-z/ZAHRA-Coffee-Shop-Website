@@ -23,7 +23,7 @@ function Revheader() {
         {/* Animated text in the center */}
         <div className="header-text-container">
           <AnimatedText 
-            // تم تصحيح الخطأ هنا لاستخدام \n بدلاً من n
+           
             text="Réservez plus qu’une table… nréservez un souvenir." 
             className="rev-header-text" 
           />

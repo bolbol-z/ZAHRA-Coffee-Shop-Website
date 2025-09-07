@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import './Headermenu.css';
 import images from '../../assets/assets';
 import AnimatedText from '../SplitText';
+import { useNavigate } from 'react-router-dom';
 
 function Headermenu() {
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
+
+    const handleReserveClick = () => {
+      navigate('/reservation');
+      };
 
     return (
         <div className='Headermenu'>
@@ -27,7 +33,7 @@ function Headermenu() {
                     </Link>
                     
                     {/* Reserve button */}
-                    <button className="reserve-button">Réserver</button>
+                    <button className="reserve-button" onClick={handleReserveClick}>Réserver</button>
                 </div>
 
                 {/* Text with AnimatedText component */}

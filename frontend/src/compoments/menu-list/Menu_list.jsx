@@ -1,7 +1,6 @@
 ﻿import React from 'react';
 import './Menu_list.css';
 import { menu_list } from '../../assets/assets.js';
-import AnimatedText from '../SplitText'; 
 import MenuItemAnimation from '../MenuItemAnimation'; 
 
 function Menu_list() {
@@ -16,14 +15,12 @@ function Menu_list() {
                 <div className="menu-grid">
                     {items.map((item, index) => (
                         <div className="menu-item" key={index}>
-                            
                             <div className="item-content">
                                 <div className="item-image" style={{ backgroundImage: `url(${item.menu_image})` }}></div>
                                 <p className="item-name">{item.item_name}</p>
                                 <p className="item-description">{item.item_description}</p>
                                 <p className="item-price">{item.item_price}dt</p>
                             </div>
-                            
                             <div className="order-overlay">
                                 <button className="order-button">Commander</button>
                             </div>
@@ -40,22 +37,22 @@ function Menu_list() {
             
             <div className="menu-divider"></div>
             
-            <AnimatedText text="Classique" className="section-title" />
+            <h2 className="section-title">Classique</h2>
             {renderMenuItems(classiqueItems)}
             
             <div className="menu-divider section-divider"></div>
 
-            <AnimatedText text="Café Glacé" className="section-title" />
+            <h2 className="section-title">Café Glacé</h2>
             {renderMenuItems(cafeGlaceItems)}
             
             <div className="menu-divider section-divider"></div>
 
-            <AnimatedText text="Café Spécial" className="section-title" />
+            <h2 className="section-title">Café Spécial</h2>
             {renderMenuItems(cafeSpecialItems)}
 
             <div className="menu-divider section-divider"></div>
 
-            <AnimatedText text="Pâtisseries" className="section-title" />
+            <h2 className="section-title">Pâtisseries</h2>
             {renderMenuItems(patisseriesItems)}
         </div>
     );

@@ -37,9 +37,9 @@
     margin-bottom: 20px;
   }
   
-  /* زيادة عرض مستطيل الطاولة */
+  
   .table-item {
-    width: 350px; /* زيادة العرض */
+    width: 350px; 
     height: 387px;
     border-radius: 30px;
     border: 1px solid #2E6F5E;
@@ -54,7 +54,7 @@
   }
   
   .empty-table-placeholder {
-    width: 350px; /* يجب أن يكون بنفس عرض .table-item */
+    width: 350px; 
     height: 387px;
     border-radius: 30px;
     border: 1px dashed #ccc;
@@ -64,7 +64,7 @@
     color: #888;
   }
   
-  /* تنسيقات حقل الإدخال */
+  
   .booking-inputs {
     margin-top: 50px;
     display: flex;
@@ -97,7 +97,7 @@
     border-color: #2E6F5E;
   }
   
-  /* زر الحجز النهائي */
+  
   .conreve-reserve-button {
     width: 142px;
     height: 51px;

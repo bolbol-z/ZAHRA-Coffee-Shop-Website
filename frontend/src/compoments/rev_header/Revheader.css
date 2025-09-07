@@ -14,10 +14,10 @@
     background-image: url('/esra-afsar-Bt3Qv7TNeoA-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
-    position: relative; /* مهم لتموضع العناصر الداخلية بشكل مطلق */
+    position: relative; 
     display: flex;
-    justify-content: center; /* توسيط أفقي للمحتوى (النص) */
-    align-items: center;   /* توسيط عمودي للمحتوى (النص) */
+    justify-content: center; 
+    align-items: center;   
     border-radius: 0 0 50px 50px;
   }
   
@@ -25,16 +25,16 @@
   .header-logo {
     width: 108px;
     height: 108px;
-    position: absolute; /* تموضع مطلق بالنسبة لـ .header-background-image */
-    top: 30px; /* مسافة من الأعلى */
-    left: 30px; /* مسافة من اليسار */
+    position: absolute; 
+    top: 30px; 
+    left: 30px; 
     cursor: pointer;
-    z-index: 10; /* للتأكد من ظهوره فوق الخلفية */
+    z-index: 10; 
   }
   
   /* Text container for centering */
   .header-text-container {
-    max-width: 1150px; /* لتحديد عرض النص */
+    max-width: 1150px; 
     text-align: center;
     z-index: 10;
   }
@@ -53,7 +53,7 @@
   
   /* 'Commander' button styling */
   .commander-button {
-    color: #E5D3B3; /* تم تعديل اللون ليتوافق مع الصورة */
+    color: #E5D3B3; 
     background-color: transparent;
     font-family: Raleway, sans-serif;
     font-size: 18px;
@@ -65,11 +65,11 @@
     border-radius: 50px;
     border: 1px solid #F7F4EF; 
     cursor: pointer;
-    position: absolute; /* تموضع مطلق بالنسبة لـ .header-background-image */
-    top: 50px; /* مسافة من الأعلى */
-    right: 50px; /* مسافة من اليمين */
+    position: absolute; 
+    top: 50px; 
+    right: 50px; 
     transition: all 0.3s ease-in-out;
-    z-index: 10; /* للتأكد من ظهوره فوق الخلفية */
+    z-index: 10; 
   }
   
   /* Hover effect for the 'Commander' button */

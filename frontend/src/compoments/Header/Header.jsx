@@ -9,6 +9,9 @@ function Header() {
   const handleCommandClick = () => {
     navigate('/menu'); 
   };
+  const handleReserveClick = () => {
+    navigate('/reservation');
+    };
 
   return (
     <div className='header'>
@@ -28,7 +31,7 @@ function Header() {
         </div>
         <div className="action-button">
             <button className="command" onClick={handleCommandClick}>Commander</button> 
-            <button className="reserve">Réserver</button>
+            <button className="reserve" onClick={handleReserveClick}>Réserver</button>
         </div>
       
     </div>
