@@ -17,7 +17,7 @@ function Headermenu() {
         <div className='Headermenu'>
             {/* Background video */}
             <video className="video-background" autoPlay loop muted playsInline>
-                <source src="/coffee.mp4" type="video/mp4" />
+                <source src="./coffee.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
@@ -29,7 +29,7 @@ function Headermenu() {
                           onMouseEnter={() => setIsHovered(true)} 
                           onMouseLeave={() => setIsHovered(false)}
                           className={`logo-link ${isHovered ? 'hovered' : ''}`}>
-                        <img src="/ZAHRA_LOGO.png" alt="ZAHRA Logo" className="logo" />
+                        <img src="./ZAHRA_LOGO.png" alt="ZAHRA Logo" className="logo" />
                     </Link>
                     
                     {/* Reserve button */}
