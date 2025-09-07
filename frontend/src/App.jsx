@@ -22,34 +22,34 @@ const App = () => {
   return (
     <div className='app'>
       <Routes>
-        {/* مسار الصفحة الرئيسية */}
+   
         <Route path='/' element={
           <>
              <Navbar onContactClick={scrollToContact} />
              <Home ref={homeRef} />
           </>
         } />
-        {/* مسار صفحة القائمة */}
+    
         <Route path='/menu' element={
           <>
 
             <Menu />
           </>
         } />
-        {/* مسار صفحة الحجز الرئيسية */}
+       
         <Route path='/reservation' element={
           <>
 
             <Reservation />
           </>
         } />
-        {/* مسار صفحة عرض الطاولات */}
+       
         <Route path='/tables' element={
           <>
             <Tabreve />
           </>
         } />
-        {/* مسار صفحة تأكيد الحجز */}
+       
         <Route path='/con_reve' element={
           <>
             <Conreve />
